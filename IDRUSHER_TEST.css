@@ -1,0 +1,22 @@
+#RIGHT_SIDE_TEST{
+	color:white;
+	float: left;
+	width:400px;
+	height:400px;
+	background-color: green;
+	padding:10px;
+}
+#TABLE_TEST{
+	margin:20px;
+}
+td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding:8px;
+}
+#LEFT_SIDE_TEST{
+	float:right;
+	width:400px;
+	height:400px;
+	background-color: grey;
+}
