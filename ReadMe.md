@@ -23,16 +23,16 @@ can input their order online and have it show up as well.
 ### Goals
 - Create printable receipt
 - Keep customer info on hand
--- Set up royalty ability
+    - Set up royalty ability
 - Easy to use
 - Upload files plugin
 - Create completely modularized
--- To make it more pick and choose your own program
+    - To make it more pick and choose your own program
 
 ### Coding Standards
 - All variables will be like so:
--- One word: ```php $customer ```
--- Two words: ```php $customerName ```
+    - One word: ``` $customer ```
+    - Two words: ``` $customerName ```
 
 
 
