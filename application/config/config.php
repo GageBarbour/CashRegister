@@ -24,6 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/CashRegister/';
+$config['img_url'] = 'http://localhost/CashRegister/assets/images/';
+$config['css_url'] = 'http://localhost/CashRegister/assets/css/';
+$config['js_url'] = 'http://localhost/CashRegister/assets/js';
 
 /*
 |--------------------------------------------------------------------------
