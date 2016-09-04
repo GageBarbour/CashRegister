@@ -1,0 +1,3 @@
+Database Name: CashRegister
+Database User: CashRegister
+Database Pass: CashRegister
