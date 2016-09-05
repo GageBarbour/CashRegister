@@ -30,13 +30,4 @@ can input their order online and have it show up as well.
     - To make it more pick and choose your own program
 
 ### Coding Standards
-- All variables will be like so:
-    - One word: ``` $customer ```
-    - Two words: ``` $customerName ```
-
-
-
-## Ignore from here out. Just some templates for the ReadMe file
-
-### To Do:
-- [ ] Task
+Found in file STANDARDS.md
