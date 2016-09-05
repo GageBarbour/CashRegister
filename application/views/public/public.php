@@ -7,6 +7,12 @@
  */
 
 
+/*
+ * Default view $view gets set by controller for the actual view page
+ *
+ */
+
+
 $this->load->view('templates/header.php');
 $this->load->view($view);
 $this->load->view('templates/footer.php');
