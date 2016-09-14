@@ -38,7 +38,7 @@ $config['js_url'] = 'http://localhost/CashRegister/assets/js';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
