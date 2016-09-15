@@ -19,7 +19,7 @@
 			<div class="page-header">
 				<h1>Register</h1>
 			</div>
-			<?= form_open() ?>
+			<?= form_open('action', array('class' => 'login_form')) ?>
 				<div class="form-group">
 					<label for="username">Username</label>
 					<input type="text" class="form-control" id="username" name="username" placeholder="Enter a username">
