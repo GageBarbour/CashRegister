@@ -13,12 +13,15 @@
 
     public function index()
     {
-
+      $this->login();
     } // END index Function
 
     public function register()
     {
-
+      if(@$_SESSION['is_admin'] != 1)
+      {
+        redirect('/');
+      }
       // create the data object
       $data = new stdClass();
 
@@ -90,20 +93,30 @@
 
     public function login()
     {
+      if(isset($_SESSION['user_id']))
+      {
+        redirect('/program');
+      }
 
       // create the data object
       $data = new stdClass();
+      $page_data = new stdClass();
+
+      // Page Data
+      $page_data->title = 'Login';
 
       // load form helper and validation library
       $this->load->helper('form');
       $this->load->library('form_validation');
 
       // set validation rules
-      $this->form_validation->set_rules('username',
+      $this->form_validation->set_rules(
+        'username',
         'Username',
         'required|alpha_numeric');
 
-      $this->form_validation->set_rules('password',
+      $this->form_validation->set_rules(
+        'password',
         'Password',
         'required');
 
@@ -111,7 +124,7 @@
       {
 
         // validation not ok, send validation errors to the view
-        $this->load->view('header');
+        $this->load->view('header', $page_data);
         $this->load->view('user/login/login');
         $this->load->view('footer');
 
@@ -137,7 +150,7 @@
           $_SESSION['is_admin']     = (bool)$user->is_admin;
 
           // user login ok
-          $this->load->view('header');
+          $this->load->view('header', $page_data);
           $this->load->view('user/login/login_success', $data);
           $this->load->view('footer');
 
@@ -149,7 +162,7 @@
           $data->error = 'Wrong username or password.';
 
           // send error to the view
-          $this->load->view('header');
+          $this->load->view('header', $page_data);
           $this->load->view('user/login/login', $data);
           $this->load->view('footer');
 

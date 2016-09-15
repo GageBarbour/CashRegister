@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href="<?= $this->config->item('img_url') . 'favicon.png' ?>" type='image/png' />
     <meta name="language" content="english">
-    <meta name="keywords" content="USS VOLADOR OFFICAL">
+    <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="copyright" content="GBDevelopment">
     <meta name="revisit-after" content="1-month">
@@ -18,4 +18,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link href="<?php echo $this->config->item('css_url'); ?>styles.css" rel="stylesheet" />
 </head>
 <body>
-

@@ -1,6 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="container">
 	<div class="row">
+    <?= $_SESSION['username'] ?>
 		<?php if (validation_errors()) : ?>
 			<div class="col-md-12">
 				<div class="alert alert-danger" role="alert">
